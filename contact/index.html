@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Contact — Shriyansh Saini</title>
+    <meta name="description" content="Get in touch with Shriyansh Saini, software engineer in Jaipur." />
+    <meta property="og:title" content="Contact — Shriyansh Saini" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+    <link rel="stylesheet" href="/src/styles/pages.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <a class="site-header__logo" href="/">Shriyansh Saini</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__link" href="/about/">About</a>
+        <a class="site-nav__link" href="/contact/">Contact</a>
+        <a class="site-nav__link" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <a class="back-link" href="/">← Back to Work</a>
+      <h1 class="contact__title">Let's talk</h1>
+      <p class="contact__intro">
+        Have a role, a project or just a question? Send a message and it lands straight in my inbox.
+        You can also call me at <a class="about__link" href="tel:+918209204604">+91 82092 04604</a>.
+      </p>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <!-- Honeypot: hidden from people, bots fill it in and get rejected -->
+        <input type="checkbox" name="botcheck" class="contact-form__trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <div class="contact-form__row">
+          <label class="contact-form__field">
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name" maxlength="100" />
+          </label>
+          <label class="contact-form__field">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email" maxlength="150" />
+          </label>
+        </div>
+
+        <label class="contact-form__field">
+          <span>Phone <em>(optional)</em></span>
+          <input type="tel" name="phone" autocomplete="tel" maxlength="30" />
+        </label>
+
+        <label class="contact-form__field">
+          <span>Message</span>
+          <textarea name="message" rows="6" required maxlength="5000"></textarea>
+        </label>
+
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <div class="contact-form__footer">
+          <button type="submit" class="contact-form__submit">Send message</button>
+          <p class="contact-form__status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </main>
+
+    <div class="custom-cursor" aria-hidden="true"><span class="custom-cursor__label">View</span></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

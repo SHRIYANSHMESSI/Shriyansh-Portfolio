@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>About — Shriyansh Saini</title>
+    <meta name="description" content="About Shriyansh Saini, a software engineer in Jaipur building AI microservices, Flutter apps and Node.js APIs." />
+    <meta property="og:title" content="About — Shriyansh Saini" />
+    <meta property="og:type" content="profile" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+    <link rel="stylesheet" href="/src/styles/pages.css" />
+  </head>
+  <body data-page="about">
+    <header class="site-header">
+      <a class="site-header__logo" href="/">Shriyansh Saini</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__link" href="/about/">About</a>
+        <a class="site-nav__link" href="/contact/">Contact</a>
+        <a class="site-nav__link" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <main class="about">
+      <div class="about__photo">
+        <img src="/images/shriyansh-saini.webp" alt="Black and white portrait of Shriyansh Saini wearing round sunglasses and a black shirt" width="1200" height="1200" fetchpriority="high" decoding="async" />
+      </div>
+
+      <div class="about__content">
+        <h1 class="about__title">About</h1>
+        <!-- Draft from the resume and project work; to be rewritten in Shriyansh's own words. -->
+        <p>I'm a software engineer in Jaipur, about three years in. I started with Flutter and Node.js, and these days most of my energy goes into AI: building services where a language model does the reading and writing, and plain code checks everything it can.</p>
+        <p>The project I'm proudest of is a RAG microservice that reads whole school textbooks and turns them into exam papers and quizzes teachers can trust. Alongside it I built the school app it plugs into, now running across 30+ branches, a cognitive training platform where a few milliseconds really matter, and a mobile app for a mining business.</p>
+        <p>I studied Computer Science at JECRC and published a research paper on spatial computing in VR. I like the part of the job where an app leaves my laptop and real people start depending on it.</p>
+
+        <section class="how-i-work" aria-labelledby="how-i-work-title">
+          <h2 class="about__subtitle" id="how-i-work-title">How I Work</h2>
+          <ol>
+            <li><span><strong>Plan before code.</strong> For anything big I write the design down first, with the decisions and the reasons, so the build has something to be checked against.</span></li>
+            <li><span><strong>AI tools as teammates.</strong> I use Claude, Codex and Antigravity every day to research, write code, review it and test it in parallel. I stay the one who decides and verifies.</span></li>
+            <li><span><strong>Trust, but check in code.</strong> If a computer can verify it, a model doesn't get the final word: totals, answers, schemas and permissions are all checked by code.</span></li>
+            <li><span><strong>Write down every fix.</strong> Each bug I fix gets a short note on why it happened, how I fixed it and how to avoid it next time. Those notes are where most of my lessons come from.</span></li>
+          </ol>
+          <ul class="how-i-work__tools" aria-label="AI tools I use">
+            <li>Claude</li>
+            <li>Codex</li>
+            <li>Antigravity</li>
+          </ul>
+        </section>
+
+        <div class="about__contact">
+          <h2 class="about__subtitle">Get in Touch</h2>
+          <p>Open to new roles and interesting projects.</p>
+          <p><a class="about__link" href="mailto:shriyanshsaini69@gmail.com">shriyanshsaini69@gmail.com</a></p>
+          <p><a class="about__link" href="tel:+918209204604">+91 82092 04604</a></p>
+          <p><a class="about__link" href="/contact/">Send me a message →</a></p>
+        </div>
+      </div>
+    </main>
+
+    <div class="custom-cursor" aria-hidden="true"><span class="custom-cursor__label">View</span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" font-family="Segoe UI, system-ui, -apple-system, sans-serif">
+  <title>Illustration: textbook pages flowing through a vector index into a generated question paper</title>
+  <rect width="600" height="800" fill="#f5f0ff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a140f"/></marker>
+  </defs>
+
+  <!-- generated paper -->
+  <g transform="translate(150 70) rotate(-3)">
+    <rect width="300" height="250" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+    <text x="22" y="36" font-size="13" letter-spacing="1.5" fill="#1a140f">CLASS TEST · 40 MARKS</text>
+    <line x1="22" y1="50" x2="278" y2="50" stroke="#1a140f" stroke-opacity=".2"/>
+    <g font-size="12" fill="#1a140f">
+      <text x="22" y="80">Q1</text><rect x="52" y="71" width="170" height="8" fill="#1a140f" opacity=".12"/><text x="250" y="80" opacity=".6">[2]</text>
+      <text x="22" y="112">Q2</text><rect x="52" y="103" width="200" height="8" fill="#1a140f" opacity=".12"/><text x="258" y="112" opacity=".6">[3]</text>
+      <text x="22" y="144">Q3</text><rect x="52" y="135" width="140" height="8" fill="#1a140f" opacity=".12"/><text x="250" y="144" opacity=".6">[5]</text>
+      <text x="22" y="176">Q4</text><rect x="52" y="167" width="185" height="8" fill="#1a140f" opacity=".12"/><text x="250" y="176" opacity=".6">[5]</text>
+    </g>
+    <rect x="22" y="200" width="118" height="28" fill="#c9b8f0"/>
+    <text x="34" y="219" font-size="12" fill="#1a140f">✓ blueprint ok</text>
+    <rect x="150" y="200" width="128" height="28" fill="none" stroke="#1a140f" stroke-width="1"/>
+    <text x="162" y="219" font-size="12" fill="#1a140f">✓ keys verified</text>
+  </g>
+
+  <!-- arrows up -->
+  <line x1="300" y1="430" x2="300" y2="345" stroke="#1a140f" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- vector field -->
+  <g fill="#1a140f">
+    <circle cx="140" cy="450" r="4" opacity=".25"/><circle cx="190" cy="480" r="4" opacity=".25"/><circle cx="235" cy="440" r="6"/>
+    <circle cx="270" cy="500" r="6"/><circle cx="320" cy="455" r="6"/><circle cx="365" cy="505" r="4" opacity=".25"/>
+    <circle cx="410" cy="455" r="4" opacity=".25"/><circle cx="455" cy="490" r="4" opacity=".25"/><circle cx="160" cy="525" r="4" opacity=".25"/>
+    <circle cx="215" cy="545" r="4" opacity=".25"/><circle cx="300" cy="545" r="6"/><circle cx="390" cy="550" r="4" opacity=".25"/>
+    <circle cx="440" cy="535" r="4" opacity=".25"/><circle cx="345" cy="425" r="4" opacity=".25"/>
+  </g>
+  <g stroke="#1a140f" stroke-width="1.2" fill="none">
+    <path d="M235 440L270 500L320 455L300 545L270 500"/>
+  </g>
+  <circle cx="285" cy="490" r="78" fill="none" stroke="#1a140f" stroke-dasharray="4 6" stroke-opacity=".5"/>
+
+  <line x1="300" y1="660" x2="300" y2="585" stroke="#1a140f" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- open book -->
+  <g transform="translate(150 660)" stroke="#1a140f" stroke-width="1.5" fill="#fffbf0">
+    <path d="M150 20C110 0 50 0 0 12V100C50 88 110 88 150 108Z"/>
+    <path d="M150 20C190 0 250 0 300 12V100C250 88 190 88 150 108Z"/>
+    <g stroke-opacity=".35" stroke-width="1">
+      <path d="M22 34C60 26 100 26 130 38M22 52C60 44 100 44 130 56M22 70C60 62 100 62 130 74"/>
+      <path d="M170 38C200 26 240 26 278 34M170 56C200 44 240 44 278 52M170 74C200 62 240 62 278 70"/>
+    </g>
+  </g>
+</svg>

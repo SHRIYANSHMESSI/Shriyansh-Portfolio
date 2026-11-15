@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Architecture: the apps call the school backend, which calls the AI service with a short-lived signed token; the service uses Postgres with pgvector, a job queue with workers, and swappable model providers</title>
+  <rect width="1600" height="900" fill="#fffbf0"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a140f"/></marker>
+  </defs>
+  <text x="80" y="100" font-size="22" letter-spacing="3">WHO TALKS TO WHOM</text>
+  <line x1="80" y1="120" x2="1520" y2="120" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="22">
+    <!-- clients -->
+    <g transform="translate(80 200)">
+      <rect width="250" height="110" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="26" y="50">Mobile app</text>
+      <text x="26" y="82" font-size="17" opacity=".65">Flutter, built by me</text>
+    </g>
+    <g transform="translate(80 360)">
+      <rect width="250" height="110" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="26" y="50">Web app</text>
+      <text x="26" y="82" font-size="17" opacity=".65">Existing school site</text>
+    </g>
+
+    <!-- backend -->
+    <g transform="translate(450 250)">
+      <rect width="290" height="170" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="26" y="52">School backend</text>
+      <text x="26" y="88" font-size="17" opacity=".65">Login, tenant, permissions.</text>
+      <text x="26" y="114" font-size="17" opacity=".65">Apps never call the AI</text>
+      <text x="26" y="140" font-size="17" opacity=".65">service directly.</text>
+    </g>
+
+    <!-- ai service -->
+    <g transform="translate(880 220)">
+      <rect width="340" height="230" fill="#c9b8f0" stroke="#1a140f" stroke-width="2"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".75">BUILT BY ME</text>
+      <text x="28" y="96" font-size="26">AI service</text>
+      <text x="28" y="132" font-size="17" opacity=".8">Python · FastAPI</text>
+      <text x="28" y="164" font-size="17" opacity=".8">Ingest, retrieve, generate,</text>
+      <text x="28" y="190" font-size="17" opacity=".8">validate, grade, audit</text>
+    </g>
+
+    <!-- providers -->
+    <g transform="translate(1300 250)">
+      <rect width="220" height="170" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="24" y="52">LLM providers</text>
+      <text x="24" y="88" font-size="17" opacity=".65">Behind one adapter,</text>
+      <text x="24" y="114" font-size="17" opacity=".65">swap by config.</text>
+      <text x="24" y="140" font-size="17" opacity=".65">Daily canary check.</text>
+    </g>
+
+    <!-- stores -->
+    <g transform="translate(760 590)">
+      <rect width="270" height="150" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="26" y="52">Postgres + pgvector</text>
+      <text x="26" y="88" font-size="17" opacity=".65">Chunks, question bank,</text>
+      <text x="26" y="114" font-size="17" opacity=".65">row-level security per school</text>
+    </g>
+    <g transform="translate(1080 590)">
+      <rect width="270" height="150" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="26" y="52">Job queue + workers</text>
+      <text x="26" y="88" font-size="17" opacity=".65">Long book reads and</text>
+      <text x="26" y="114" font-size="17" opacity=".65">papers run in the background</text>
+    </g>
+  </g>
+
+  <g stroke="#1a140f" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <path d="M332 255H390V300H446"/>
+    <path d="M332 415H390V370H446"/>
+    <line x1="742" y1="335" x2="876" y2="335"/>
+    <line x1="1222" y1="335" x2="1296" y2="335"/>
+    <path d="M990 452V586"/>
+    <path d="M1110 452V586"/>
+  </g>
+  <rect x="752" y="282" width="118" height="34" fill="#fffbf0"/>
+  <text x="811" y="306" font-size="16" text-anchor="middle">signed JWT</text>
+  <text x="811" y="372" font-size="15" text-anchor="middle" opacity=".6">lives ~2 min</text>
+</svg>

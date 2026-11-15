@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>RAG pipeline: a textbook is read page by page into a vector store, then papers are generated from retrieved chapters and checked by code</title>
+  <rect width="1600" height="1000" fill="#f5f0ff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a140f"/></marker>
+  </defs>
+
+  <text x="80" y="110" font-size="22" letter-spacing="3">01 · READ THE BOOK</text>
+  <line x1="80" y1="130" x2="1520" y2="130" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="22">
+    <g transform="translate(80 170)">
+      <rect width="300" height="190" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".6">INPUT</text>
+      <text x="28" y="100">Textbook PDF</text>
+      <text x="28" y="134" font-size="18" opacity=".7">300 to 570 pages,</text>
+      <text x="28" y="160" font-size="18" opacity=".7">English or Hindi</text>
+    </g>
+    <g transform="translate(460 170)">
+      <rect width="300" height="190" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".6">VISION MODEL</text>
+      <text x="28" y="100">Reads each page</text>
+      <text x="28" y="134" font-size="18" opacity=".7">Batched calls, results</text>
+      <text x="28" y="160" font-size="18" opacity=".7">saved page by page</text>
+    </g>
+    <g transform="translate(840 170)">
+      <rect width="300" height="190" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".6">STRUCTURE</text>
+      <text x="28" y="100">Chunks by heading</text>
+      <text x="28" y="134" font-size="18" opacity=".7">Passages, worked examples,</text>
+      <text x="28" y="160" font-size="18" opacity=".7">questions, LaTeX maths</text>
+    </g>
+    <g transform="translate(1220 170)">
+      <rect width="300" height="190" fill="#c9b8f0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".7">STORE</text>
+      <text x="28" y="100">Postgres + pgvector</text>
+      <text x="28" y="134" font-size="18" opacity=".8">Each school's books stay</text>
+      <text x="28" y="160" font-size="18" opacity=".8">visible only to that school</text>
+    </g>
+  </g>
+  <g stroke="#1a140f" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="382" y1="265" x2="456" y2="265"/>
+    <line x1="762" y1="265" x2="836" y2="265"/>
+    <line x1="1142" y1="265" x2="1216" y2="265"/>
+  </g>
+
+  <!-- down from store -->
+  <path d="M1370 362V430H230V560" fill="none" stroke="#1a140f" stroke-width="1.5" stroke-dasharray="6 6" marker-end="url(#a)"/>
+
+  <text x="80" y="520" font-size="22" letter-spacing="3">02 · MAKE THE PAPER</text>
+  <line x1="80" y1="540" x2="1520" y2="540" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="22">
+    <g transform="translate(80 580)">
+      <rect width="300" height="190" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".6">RETRIEVE</text>
+      <text x="28" y="100">Per chapter</text>
+      <text x="28" y="134" font-size="18" opacity=".7">Balanced across chapters,</text>
+      <text x="28" y="160" font-size="18" opacity=".7">not just the closest match</text>
+    </g>
+    <g transform="translate(460 580)">
+      <rect width="300" height="190" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".6">GENERATE</text>
+      <text x="28" y="100">One slot at a time</text>
+      <text x="28" y="134" font-size="18" opacity=".7">Blueprint says marks, type</text>
+      <text x="28" y="160" font-size="18" opacity=".7">and difficulty per slot</text>
+    </g>
+    <g transform="translate(840 580)">
+      <rect width="300" height="190" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".6">CHECK IN CODE</text>
+      <text x="28" y="100">Validate + verify</text>
+      <text x="28" y="134" font-size="18" opacity=".7">Marks add up, no repeats,</text>
+      <text x="28" y="160" font-size="18" opacity=".7">answers checked by SymPy</text>
+    </g>
+    <g transform="translate(1220 580)">
+      <rect width="300" height="190" fill="#c9b8f0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56" font-size="15" letter-spacing="2" opacity=".7">OUTPUT</text>
+      <text x="28" y="100">Paper or quiz</text>
+      <text x="28" y="134" font-size="18" opacity=".8">Print-ready PDF or an</text>
+      <text x="28" y="160" font-size="18" opacity=".8">online quiz with grading</text>
+    </g>
+  </g>
+  <g stroke="#1a140f" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="382" y1="675" x2="456" y2="675"/>
+    <line x1="762" y1="675" x2="836" y2="675"/>
+    <line x1="1142" y1="675" x2="1216" y2="675"/>
+  </g>
+  <!-- repair loop -->
+  <path d="M990 772V850H610V776" fill="none" stroke="#1a140f" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="630" y="834" width="340" height="32" fill="#f5f0ff"/>
+  <text x="800" y="857" font-size="18" text-anchor="middle">failed slots retried with the reason</text>
+</svg>

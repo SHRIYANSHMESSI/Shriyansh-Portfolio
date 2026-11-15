@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Mock admin dashboard with made-up data: participant numbers, a reaction-time trend across 12 sessions, a participant table and game timing settings</title>
+  <rect width="1600" height="1000" fill="#f0fff4"/>
+  <rect x="60" y="60" width="1480" height="880" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+
+  <!-- sidebar -->
+  <rect x="60" y="60" width="250" height="880" fill="#f7f3e8"/>
+  <line x1="310" y1="60" x2="310" y2="940" stroke="#1a140f" stroke-opacity=".15"/>
+  <text x="92" y="112" font-size="15" letter-spacing="2">ADMIN</text>
+  <g font-size="18">
+    <rect x="76" y="146" width="218" height="44" fill="#b5e3c3"/><text x="96" y="175">Dashboard</text>
+    <text x="96" y="235" opacity=".75">Participants</text>
+    <text x="96" y="285" opacity=".75">Games</text>
+    <text x="96" y="335" opacity=".75">12-session program</text>
+    <text x="96" y="385" opacity=".75">Export center</text>
+    <text x="96" y="435" opacity=".75">Requests</text>
+    <text x="96" y="485" opacity=".75">Settings</text>
+  </g>
+  <text x="92" y="900" font-size="14" opacity=".5">Sample data only</text>
+
+  <!-- KPIs -->
+  <g transform="translate(350 100)">
+    <text x="0" y="30" font-size="30">Overview</text>
+    <g font-size="14">
+      <rect x="0" y="60" width="270" height="120" fill="none" stroke="#1a140f"/>
+      <text x="24" y="94" letter-spacing="1.5" opacity=".6">ACTIVE PARTICIPANTS</text><text x="24" y="150" font-size="40" font-weight="300">48</text>
+      <rect x="290" y="60" width="270" height="120" fill="none" stroke="#1a140f"/>
+      <text x="314" y="94" letter-spacing="1.5" opacity=".6">SESSIONS TODAY</text><text x="314" y="150" font-size="40" font-weight="300">31</text>
+      <rect x="580" y="60" width="270" height="120" fill="none" stroke="#1a140f"/>
+      <text x="604" y="94" letter-spacing="1.5" opacity=".6">AVG REACTION TIME</text><text x="604" y="150" font-size="40" font-weight="300">438 ms</text>
+      <rect x="870" y="60" width="270" height="120" fill="#b5e3c3" stroke="#1a140f"/>
+      <text x="894" y="94" letter-spacing="1.5" opacity=".7">PROGRAM COMPLETION</text><text x="894" y="150" font-size="40" font-weight="300">82%</text>
+    </g>
+  </g>
+
+  <!-- chart -->
+  <g transform="translate(350 320)">
+    <rect width="700" height="330" fill="none" stroke="#1a140f" stroke-opacity=".3"/>
+    <text x="24" y="40" font-size="14" letter-spacing="1.5" opacity=".6">MEAN REACTION TIME BY SESSION</text>
+    <g stroke="#1a140f" stroke-opacity=".1">
+      <line x1="60" y1="90" x2="670" y2="90"/><line x1="60" y1="150" x2="670" y2="150"/><line x1="60" y1="210" x2="670" y2="210"/><line x1="60" y1="270" x2="670" y2="270"/>
+    </g>
+    <g font-size="12" opacity=".55" text-anchor="end">
+      <text x="50" y="94">560</text><text x="50" y="154">500</text><text x="50" y="214">440</text><text x="50" y="274">380</text>
+    </g>
+    <polyline fill="none" stroke="#1a140f" stroke-width="2.5" points="80,110 135,122 190,118 245,140 300,152 355,160 410,176 465,184 520,196 575,204 630,212"/>
+    <g fill="#1a140f">
+      <circle cx="80" cy="110" r="4"/><circle cx="135" cy="122" r="4"/><circle cx="190" cy="118" r="4"/><circle cx="245" cy="140" r="4"/><circle cx="300" cy="152" r="4"/><circle cx="355" cy="160" r="4"/><circle cx="410" cy="176" r="4"/><circle cx="465" cy="184" r="4"/><circle cx="520" cy="196" r="4"/><circle cx="575" cy="204" r="4"/><circle cx="630" cy="212" r="6"/>
+    </g>
+    <g font-size="12" opacity=".55" text-anchor="middle">
+      <text x="80" y="300">S1</text><text x="245" y="300">S4</text><text x="410" y="300">S7</text><text x="630" y="300">S11</text>
+    </g>
+  </g>
+
+  <!-- settings -->
+  <g transform="translate(1080 320)">
+    <rect width="410" height="330" fill="none" stroke="#1a140f" stroke-opacity=".3"/>
+    <text x="24" y="40" font-size="14" letter-spacing="1.5" opacity=".6">STOP SIGNAL · TIMINGS</text>
+    <g font-size="17">
+      <text x="24" y="92">Go window</text><rect x="250" y="70" width="136" height="34" fill="none" stroke="#1a140f"/><text x="370" y="93" text-anchor="end">500 ms</text>
+      <text x="24" y="146">Stop delay</text><rect x="250" y="124" width="136" height="34" fill="none" stroke="#1a140f"/><text x="370" y="147" text-anchor="end">250 ms</text>
+      <text x="24" y="200">Fixation</text><rect x="250" y="178" width="136" height="34" fill="none" stroke="#1a140f"/><text x="370" y="201" text-anchor="end">500 ms</text>
+      <text x="24" y="254">Trials · go %</text><rect x="250" y="232" width="136" height="34" fill="none" stroke="#1a140f"/><text x="370" y="255" text-anchor="end">60 · 80%</text>
+    </g>
+    <text x="24" y="306" font-size="14" opacity=".6">Saved here, read by the app on next play</text>
+  </g>
+
+  <!-- table -->
+  <g transform="translate(350 690)" font-size="16">
+    <text x="0" y="20" font-size="14" letter-spacing="1.5" opacity=".6">RECENT SESSIONS</text>
+    <line x1="0" y1="40" x2="1140" y2="40" stroke="#1a140f" stroke-opacity=".2"/>
+    <g opacity=".6" font-size="13" letter-spacing="1"><text x="0" y="68">PARTICIPANT</text><text x="260" y="68">GAME</text><text x="560" y="68">SESSION</text><text x="760" y="68">MEAN RT</text><text x="960" y="68">ACCURACY</text></g>
+    <text x="0" y="110">P-1042</text><text x="260" y="110">Spatial N-back</text><text x="560" y="110">7 / 12</text><text x="760" y="110">452 ms</text><text x="960" y="110">91%</text>
+    <line x1="0" y1="128" x2="1140" y2="128" stroke="#1a140f" stroke-opacity=".1"/>
+    <text x="0" y="164">P-1043</text><text x="260" y="164">Corsi blocks</text><text x="560" y="164">3 / 12</text><text x="760" y="164">—</text><text x="960" y="164">span 6</text>
+    <line x1="0" y1="182" x2="1140" y2="182" stroke="#1a140f" stroke-opacity=".1"/>
+    <text x="0" y="218">P-1047</text><text x="260" y="218">Posner cueing</text><text x="560" y="218">11 / 12</text><text x="760" y="218">398 ms</text><text x="960" y="218">95%</text>
+  </g>
+</svg>

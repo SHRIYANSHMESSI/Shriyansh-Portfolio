@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.devserver.log
+*.log
+.netlify
+
+# Raw originals (copies live in public/)
+Shriyansh_Saini_Resume*.pdf
+IMG_*.webp

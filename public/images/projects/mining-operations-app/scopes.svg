@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Diagram: every request is scoped twice, by company from the login token and by business side from a header, and money is always worked out by the server</title>
+  <rect width="1600" height="720" fill="#fffbf0"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a140f"/></marker>
+  </defs>
+  <text x="80" y="90" font-size="22" letter-spacing="3">EVERY REQUEST IS SCOPED TWICE</text>
+  <line x1="80" y1="110" x2="1520" y2="110" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="22">
+    <g transform="translate(80 200)">
+      <rect width="300" height="200" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="58">Flutter app</text>
+      <text x="28" y="96" font-size="17" opacity=".65">Owner, partner or staff</text>
+      <text x="28" y="122" font-size="17" opacity=".65">login, role-based menu</text>
+      <text x="28" y="160" font-size="17" opacity=".65">~30 feature modules</text>
+    </g>
+
+    <g transform="translate(500 170)">
+      <rect width="440" height="260" fill="#f2c49b" stroke="#1a140f" stroke-width="2"/>
+      <text x="30" y="56" font-size="15" letter-spacing="2" opacity=".75">ONE NETWORK LAYER</text>
+      <text x="30" y="100" font-size="20">1 · Company comes from the login</text>
+      <text x="56" y="128" font-size="17" opacity=".8">token, never from the request body</text>
+      <text x="30" y="172" font-size="20">2 · Side (mine or checkpost) sent</text>
+      <text x="56" y="200" font-size="17" opacity=".8">as a header on every call</text>
+      <text x="30" y="240" font-size="17" opacity=".8">Revoked token → clean logout</text>
+    </g>
+
+    <g transform="translate(1060 200)">
+      <rect width="460" height="200" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="58">Existing REST API</text>
+      <text x="28" y="96" font-size="17" opacity=".65">~150 endpoints. The server</text>
+      <text x="28" y="122" font-size="17" opacity=".65">computes every money figure;</text>
+      <text x="28" y="148" font-size="17" opacity=".65">the app only shows a preview.</text>
+    </g>
+  </g>
+  <g stroke="#1a140f" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <line x1="382" y1="300" x2="496" y2="300"/>
+    <line x1="942" y1="300" x2="1056" y2="300"/>
+  </g>
+  <text x="80" y="540" font-size="19" opacity=".7">Miss either scope and the data isn't an error, it's quietly wrong. So both live in one place, with tests for each trap.</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Mock phone screen: a timed stop-signal style game with an arrow stimulus and a millisecond timer</title>
+  <rect width="600" height="800" fill="#f0fff4"/>
+  <rect x="140" y="80" width="320" height="640" rx="34" fill="#1a140f"/>
+  <rect x="152" y="92" width="296" height="616" rx="24" fill="#fffbf0"/>
+  <rect x="262" y="104" width="76" height="8" rx="4" fill="#1a140f" opacity=".85"/>
+
+  <text x="176" y="150" font-size="12" letter-spacing="1.5" opacity=".6">SESSION 4 OF 12</text>
+  <text x="176" y="180" font-size="22">Stop when it turns</text>
+  <rect x="176" y="196" width="250" height="6" fill="#1a140f" opacity=".1"/>
+  <rect x="176" y="196" width="150" height="6" fill="#1a140f"/>
+  <text x="426" y="222" font-size="12" text-anchor="end" opacity=".6">trial 36 / 60</text>
+
+  <!-- stimulus -->
+  <circle cx="300" cy="380" r="96" fill="#b5e3c3"/>
+  <path d="M250 380H340M310 345L350 380L310 415" fill="none" stroke="#1a140f" stroke-width="14" stroke-linecap="square"/>
+  <text x="300" y="520" font-size="34" text-anchor="middle" font-weight="300">412 ms</text>
+  <text x="300" y="546" font-size="12" text-anchor="middle" opacity=".6">last reaction time</text>
+
+  <g font-size="14" text-anchor="middle">
+    <rect x="176" y="590" width="120" height="80" fill="none" stroke="#1a140f"/>
+    <text x="236" y="638">←  1</text>
+    <rect x="306" y="590" width="120" height="80" fill="#1a140f"/>
+    <text x="366" y="638" fill="#fffbf0">2  →</text>
+  </g>
+</svg>

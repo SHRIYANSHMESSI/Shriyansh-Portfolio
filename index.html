@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Shriyansh Saini — Engineer &amp; AI Builder</title>
+    <meta name="description" content="Shriyansh Saini, software engineer building RAG microservices, Flutter apps and Node.js APIs that real people use." />
+    <meta property="og:title" content="Shriyansh Saini — Engineer &amp; AI Builder" />
+    <meta property="og:description" content="AI microservices, Flutter apps and Node.js APIs, from first commit to production." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <script>
+      // Hide the home page until the preloader covers it (desktop + motion, first visit per tab only).
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        // Keep the hero hidden until its content is rendered, so the raw placeholder text never flashes.
+        d.classList.add('home-pending');
+        setTimeout(function () { d.classList.remove('home-pending'); }, 3000);
+        var seen = false;
+        try { seen = sessionStorage.getItem('preloader-seen') === '1'; } catch (e) {}
+        if (!seen && matchMedia('(min-width: 769px)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          d.classList.add('motion-pending');
+          setTimeout(function () { d.classList.remove('motion-pending'); }, 4000);
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+    <link rel="stylesheet" href="/src/styles/pages.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="site-header__logo" href="/">Shriyansh Saini</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__link" href="/about/">About</a>
+        <a class="site-nav__link" href="/contact/">Contact</a>
+        <a class="site-nav__link" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <main class="home">
+      <section class="hero">
+        <div class="hero__text">
+          <div class="hero__top">
+            <h1 class="hero__title" data-headline>Engineer &amp; Builder</h1>
+            <p class="hero__subline" data-subline></p>
+          </div>
+          <div id="skills-physics" aria-label="Skills"></div>
+        </div>
+
+        <div class="hero__carousel-wrap">
+          <div class="hero__carousel" id="carousel" aria-label="Selected work"></div>
+          <div class="carousel-indicator" aria-hidden="true"><i data-lucide="chevron-right"></i></div>
+        </div>
+      </section>
+
+      <footer class="home-footer">
+        <p class="home-footer__credit">© Developed by Shriyansh Saini</p>
+        <ul class="footer-links">
+          <li><a href="mailto:shriyanshsaini69@gmail.com"><i data-lucide="mail"></i>Email</a></li>
+          <li><a href="tel:+918209204604"><i data-lucide="phone"></i>+91 82092 04604</a></li>
+          <li><a href="https://www.linkedin.com/in/shriyansh-saini" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i>LinkedIn</a></li>
+          <li><a href="https://github.com/SHRIYANSHMESSI" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub</a></li>
+        </ul>
+      </footer>
+    </main>
+
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <filter id="pixelate" x="0%" y="0%" width="100%" height="100%">
+        <feFlood x="4" y="4" height="2" width="2" />
+        <feComposite id="pixelSize" width="10" height="10" />
+        <feTile result="a" />
+        <feComposite in="SourceGraphic" in2="a" operator="in" />
+        <feMorphology id="pixelDilate" operator="dilate" radius="5" />
+      </filter>
+    </svg>
+
+    <div class="custom-cursor" aria-hidden="true"><span class="custom-cursor__label">View</span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Mock phone screen with made-up data: marking class attendance while offline</title>
+  <rect width="600" height="800" fill="#f0f4ff"/>
+  <rect x="140" y="80" width="320" height="640" rx="34" fill="#1a140f"/>
+  <rect x="152" y="92" width="296" height="616" rx="24" fill="#fffbf0"/>
+  <rect x="262" y="104" width="76" height="8" rx="4" fill="#1a140f" opacity=".85"/>
+
+  <text x="176" y="150" font-size="12" letter-spacing="1.5" opacity=".6">ATTENDANCE</text>
+  <text x="176" y="180" font-size="22">Class 6 · B</text>
+  <rect x="330" y="160" width="96" height="26" fill="#b9c8f0"/>
+  <text x="378" y="178" font-size="12" text-anchor="middle">offline · saved</text>
+  <line x1="176" y1="202" x2="426" y2="202" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="15">
+    <g transform="translate(176 222)">
+      <circle cx="14" cy="14" r="14" fill="#b9c8f0"/><text x="40" y="19">Student 01</text>
+      <rect x="196" y="2" width="54" height="24" fill="#1a140f"/><text x="223" y="19" font-size="12" fill="#fffbf0" text-anchor="middle">P</text>
+    </g>
+    <g transform="translate(176 266)">
+      <circle cx="14" cy="14" r="14" fill="#e3e8f5"/><text x="40" y="19">Student 02</text>
+      <rect x="196" y="2" width="54" height="24" fill="#1a140f"/><text x="223" y="19" font-size="12" fill="#fffbf0" text-anchor="middle">P</text>
+    </g>
+    <g transform="translate(176 310)">
+      <circle cx="14" cy="14" r="14" fill="#b9c8f0"/><text x="40" y="19">Student 03</text>
+      <rect x="196" y="2" width="54" height="24" fill="none" stroke="#1a140f"/><text x="223" y="19" font-size="12" text-anchor="middle">A</text>
+    </g>
+    <g transform="translate(176 354)">
+      <circle cx="14" cy="14" r="14" fill="#e3e8f5"/><text x="40" y="19">Student 04</text>
+      <rect x="196" y="2" width="54" height="24" fill="#1a140f"/><text x="223" y="19" font-size="12" fill="#fffbf0" text-anchor="middle">P</text>
+    </g>
+    <g transform="translate(176 398)">
+      <circle cx="14" cy="14" r="14" fill="#b9c8f0"/><text x="40" y="19">Student 05</text>
+      <rect x="196" y="2" width="54" height="24" fill="#1a140f"/><text x="223" y="19" font-size="12" fill="#fffbf0" text-anchor="middle">P</text>
+    </g>
+    <g transform="translate(176 442)">
+      <circle cx="14" cy="14" r="14" fill="#e3e8f5"/><text x="40" y="19">Student 06</text>
+      <rect x="196" y="2" width="54" height="24" fill="none" stroke="#1a140f"/><text x="223" y="19" font-size="12" text-anchor="middle">L</text>
+    </g>
+  </g>
+
+  <line x1="176" y1="500" x2="426" y2="500" stroke="#1a140f" stroke-opacity=".15"/>
+  <text x="176" y="530" font-size="13" opacity=".6">28 present · 2 absent · 1 leave</text>
+  <g font-size="12" text-anchor="middle">
+    <rect x="176" y="550" width="76" height="56" fill="none" stroke="#1a140f"/><text x="214" y="584">Photo</text>
+    <rect x="263" y="550" width="76" height="56" fill="none" stroke="#1a140f"/><text x="301" y="584">Face</text>
+    <rect x="350" y="550" width="76" height="56" fill="none" stroke="#1a140f"/><text x="388" y="584">Voice</text>
+  </g>
+  <rect x="176" y="624" width="250" height="48" fill="#1a140f"/>
+  <text x="301" y="653" font-size="13" fill="#fffbf0" text-anchor="middle" letter-spacing="1.5">SYNC WHEN ONLINE</text>
+</svg>

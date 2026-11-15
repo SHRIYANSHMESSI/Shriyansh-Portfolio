@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Mock screen with made-up content: a generated class test on the left and the code checks on the right</title>
+  <rect width="1600" height="1000" fill="#f5f0ff"/>
+
+  <!-- window -->
+  <rect x="80" y="70" width="1440" height="860" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+  <line x1="80" y1="120" x2="1520" y2="120" stroke="#1a140f" stroke-opacity=".2"/>
+  <circle cx="110" cy="95" r="6" fill="none" stroke="#1a140f"/><circle cx="132" cy="95" r="6" fill="none" stroke="#1a140f"/><circle cx="154" cy="95" r="6" fill="none" stroke="#1a140f"/>
+  <text x="800" y="102" font-size="17" text-anchor="middle" opacity=".6">Create · Class test (sample data)</text>
+
+  <!-- paper -->
+  <g transform="translate(130 160)">
+    <text x="0" y="30" font-size="15" letter-spacing="2" opacity=".6">CLASS 7 · MATHS · CHAPTERS 4 TO 6</text>
+    <text x="0" y="74" font-size="34">Unit Test 2</text>
+    <text x="840" y="74" font-size="20" text-anchor="end" opacity=".7">40 marks · 60 min</text>
+    <line x1="0" y1="100" x2="840" y2="100" stroke="#1a140f" stroke-opacity=".2"/>
+
+    <g font-size="20">
+      <text x="0" y="150">1.</text>
+      <text x="36" y="150">A rectangle is 7 cm long and 4 cm wide. Find its area.</text>
+      <text x="840" y="150" text-anchor="end" opacity=".6">[2]</text>
+      <rect x="36" y="166" width="190" height="28" fill="#c9b8f0"/>
+      <text x="50" y="186" font-size="15">answer computed by code</text>
+
+      <text x="0" y="246">2.</text>
+      <text x="36" y="246">Which of these is a prime number?</text>
+      <text x="840" y="246" text-anchor="end" opacity=".6">[1]</text>
+      <text x="36" y="282" font-size="18" opacity=".75">(a) 21    (b) 27    (c) 29    (d) 33</text>
+      <rect x="36" y="298" width="150" height="28" fill="none" stroke="#1a140f"/>
+      <text x="50" y="318" font-size="15">key checked</text>
+
+      <text x="0" y="378">3.</text>
+      <text x="36" y="378">Solve for x:  3x + 5 = 26</text>
+      <text x="840" y="378" text-anchor="end" opacity=".6">[3]</text>
+      <rect x="36" y="394" width="180" height="28" fill="#c9b8f0"/>
+      <text x="50" y="414" font-size="15">solved with SymPy</text>
+
+      <text x="0" y="474">4.</text>
+      <text x="36" y="474">Explain why the sum of angles in a triangle is 180°.</text>
+      <text x="840" y="474" text-anchor="end" opacity=".6">[5]</text>
+      <rect x="36" y="490" width="160" height="28" fill="none" stroke="#1a140f"/>
+      <text x="50" y="510" font-size="15">from chapter 6</text>
+
+      <text x="0" y="570">5.</text>
+      <text x="36" y="570">A shop gives 15% off on ₹ 480. What is the price paid?</text>
+      <text x="840" y="570" text-anchor="end" opacity=".6">[3]</text>
+      <rect x="36" y="586" width="190" height="28" fill="#c9b8f0"/>
+      <text x="50" y="606" font-size="15">answer computed by code</text>
+    </g>
+    <text x="0" y="680" font-size="18" opacity=".5">… 9 more questions</text>
+  </g>
+
+  <!-- checks panel -->
+  <line x1="1030" y1="120" x2="1030" y2="930" stroke="#1a140f" stroke-opacity=".2"/>
+  <g transform="translate(1070 160)">
+    <text x="0" y="30" font-size="15" letter-spacing="2" opacity=".6">CHECKED BY CODE</text>
+    <g font-size="20">
+      <text x="0" y="90">✓  Marks add up</text><text x="400" y="90" text-anchor="end" opacity=".6">40 / 40</text>
+      <line x1="0" y1="112" x2="400" y2="112" stroke="#1a140f" stroke-opacity=".12"/>
+      <text x="0" y="152">✓  Every chapter covered</text><text x="400" y="152" text-anchor="end" opacity=".6">3 / 3</text>
+      <line x1="0" y1="174" x2="400" y2="174" stroke="#1a140f" stroke-opacity=".12"/>
+      <text x="0" y="214">✓  No repeat from Test 1</text><text x="400" y="214" text-anchor="end" opacity=".6">0</text>
+      <line x1="0" y1="236" x2="400" y2="236" stroke="#1a140f" stroke-opacity=".12"/>
+      <text x="0" y="276">✓  Right class level</text><text x="400" y="276" text-anchor="end" opacity=".6">Class 7</text>
+      <line x1="0" y1="298" x2="400" y2="298" stroke="#1a140f" stroke-opacity=".12"/>
+      <text x="0" y="338">!  Weightage drift</text><text x="400" y="338" text-anchor="end" opacity=".6">ch 5 +4%</text>
+    </g>
+
+    <text x="0" y="420" font-size="15" letter-spacing="2" opacity=".6">DIFFICULTY MIX</text>
+    <rect x="0" y="440" width="140" height="22" fill="#c9b8f0" stroke="#1a140f"/>
+    <rect x="140" y="440" width="180" height="22" fill="#fffbf0" stroke="#1a140f"/>
+    <rect x="320" y="440" width="80" height="22" fill="#1a140f"/>
+    <text x="0" y="492" font-size="16" opacity=".7">easy 35%   ·   medium 45%   ·   hard 20%</text>
+
+    <rect x="0" y="560" width="400" height="56" fill="#1a140f"/>
+    <text x="200" y="595" font-size="18" fill="#fffbf0" text-anchor="middle" letter-spacing="2">PUBLISH AS PDF</text>
+    <rect x="0" y="632" width="400" height="56" fill="none" stroke="#1a140f"/>
+    <text x="200" y="667" font-size="18" text-anchor="middle" letter-spacing="2">ASSIGN AS QUIZ</text>
+  </g>
+</svg>

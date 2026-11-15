@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Page state machine: temporary errors wait and retry, permanent errors are recorded, and a book with any failed page finishes as done with gaps instead of done</title>
+  <rect width="1600" height="700" fill="#fffbf0"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a140f"/></marker>
+  </defs>
+  <text x="80" y="90" font-size="22" letter-spacing="3">EVERY PAGE HAS A STATE</text>
+  <line x1="80" y1="110" x2="1520" y2="110" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="21" text-anchor="middle">
+    <rect x="80" y="200" width="220" height="80" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/><text x="190" y="248">pending</text>
+    <rect x="420" y="200" width="240" height="80" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/><text x="540" y="248">in progress</text>
+    <rect x="800" y="200" width="200" height="80" fill="#c9b8f0" stroke="#1a140f" stroke-width="1.5"/><text x="900" y="248">done</text>
+    <rect x="420" y="430" width="240" height="80" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5" stroke-dasharray="6 5"/><text x="540" y="478">retry wait</text>
+    <rect x="800" y="430" width="240" height="80" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/><text x="920" y="478">failed (permanent)</text>
+    <rect x="1180" y="300" width="340" height="110" fill="#1a140f"/>
+    <text x="1350" y="348" fill="#fffbf0">book: done or</text>
+    <text x="1350" y="380" fill="#fffbf0">done with gaps</text>
+  </g>
+
+  <g stroke="#1a140f" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <line x1="302" y1="240" x2="416" y2="240"/>
+    <line x1="662" y1="240" x2="796" y2="240"/>
+    <path d="M500 282V426"/>
+    <path d="M580 426V282"/>
+    <path d="M640 282L840 426"/>
+    <path d="M1002 240H1260V296"/>
+    <path d="M1042 470H1260V414"/>
+  </g>
+  <g font-size="17" opacity=".75">
+    <text x="486" y="370" text-anchor="end">429, 5xx, timeout:</text>
+    <text x="486" y="396" text-anchor="end">wait, then retry</text>
+    <text x="600" y="370">retry</text>
+    <text x="760" y="330">bad schema, 4xx</text>
+  </g>
+  <text x="80" y="620" font-size="19" opacity=".7">Each page keeps its own result and retry budget, so one bad batch never leaves a silent hole in a book.</text>
+</svg>

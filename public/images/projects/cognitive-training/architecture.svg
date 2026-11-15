@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" font-family="Segoe UI, system-ui, -apple-system, sans-serif" fill="#1a140f">
+  <title>Architecture: the Flutter player app and the React admin dashboard both use one Node and Express API backed by MySQL, replacing an old PHP backend</title>
+  <rect width="1600" height="760" fill="#fffbf0"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a140f"/></marker>
+  </defs>
+  <text x="80" y="90" font-size="22" letter-spacing="3">ONE API FOR THE APP AND THE DASHBOARD</text>
+  <line x1="80" y1="110" x2="1520" y2="110" stroke="#1a140f" stroke-opacity=".15"/>
+
+  <g font-size="22">
+    <g transform="translate(80 170)">
+      <rect width="320" height="150" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56">Player app</text>
+      <text x="28" y="92" font-size="17" opacity=".65">Flutter · timed games,</text>
+      <text x="28" y="118" font-size="17" opacity=".65">12-session program, Hindi</text>
+    </g>
+    <g transform="translate(80 380)">
+      <rect width="320" height="150" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="56">Admin dashboard</text>
+      <text x="28" y="92" font-size="17" opacity=".65">React 18 · Tailwind,</text>
+      <text x="28" y="118" font-size="17" opacity=".65">settings, exports, reports</text>
+    </g>
+
+    <g transform="translate(600 240)">
+      <rect width="400" height="220" fill="#b5e3c3" stroke="#1a140f" stroke-width="2"/>
+      <text x="30" y="58">Node + Express API</text>
+      <text x="30" y="98" font-size="17" opacity=".8">App routes keep the old response</text>
+      <text x="30" y="124" font-size="17" opacity=".8">shape so installed apps don't break.</text>
+      <text x="30" y="164" font-size="17" opacity=".8">Zod validation · JWT · Pino logs</text>
+      <text x="30" y="190" font-size="17" opacity=".8">Cron for session reminders</text>
+    </g>
+
+    <g transform="translate(1200 260)">
+      <rect width="320" height="180" fill="#fffbf0" stroke="#1a140f" stroke-width="1.5"/>
+      <text x="28" y="58">MySQL</text>
+      <text x="28" y="96" font-size="17" opacity=".65">Trials stored per tap,</text>
+      <text x="28" y="122" font-size="17" opacity=".65">utf8mb4 for Hindi text</text>
+    </g>
+  </g>
+
+  <g stroke="#1a140f" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <path d="M402 245H500V320H596"/>
+    <path d="M402 455H500V380H596"/>
+    <line x1="1002" y1="350" x2="1196" y2="350"/>
+  </g>
+
+  <g transform="translate(600 560)">
+    <rect width="400" height="90" fill="none" stroke="#1a140f" stroke-dasharray="6 5" stroke-opacity=".5"/>
+    <line x1="0" y1="0" x2="400" y2="90" stroke="#1a140f" stroke-opacity=".35"/>
+    <text x="30" y="40" font-size="20" opacity=".6">Old PHP backend</text>
+    <text x="30" y="68" font-size="16" opacity=".55">retired after all 13 endpoints moved</text>
+  </g>
+</svg>
