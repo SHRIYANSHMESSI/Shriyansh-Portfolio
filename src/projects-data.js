@@ -5,8 +5,8 @@
 export const site = {
   name: 'Shriyansh Saini',
   email: 'shriyanshsaini69@gmail.com',
-  phone: '+91 82092 04604',
-  phoneHref: 'tel:+918209204604',
+  phone: '+91 82092 04603',
+  phoneHref: 'tel:+918209204603',
   linkedin: 'https://www.linkedin.com/in/shriyansh-saini',
   github: 'https://github.com/SHRIYANSHMESSI',
   moreWork: 'https://github.com/SHRIYANSHMESSI',
